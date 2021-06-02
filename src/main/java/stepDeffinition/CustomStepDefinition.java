@@ -3,11 +3,13 @@ package stepDeffinition;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.velocity.runtime.parser.node.SetPropertyExecutor;
 
 
 public class StepDefinition {
     @Given("^Open the Firefox and launch the application$")
     public void open_the_firefox_and_launch_the_application() throws Throwable{
+        SetPropertyExecutor dr = new SetPropertyExecutor()
         // Write code here that turns the phrase above into concrete actions
 
         throw new io.cucumber.java.PendingException();
